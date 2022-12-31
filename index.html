@@ -1,3 +1,18 @@
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.onscroll = function() {myFunction()};
+
+}
+</script>
+</html>
+
 <div class="header">
   <h2>Scroll Indicator</h2>
   <div class="progress-container">
