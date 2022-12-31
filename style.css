@@ -23,6 +23,8 @@
 }
 html{
 	background: #222048;
+  	scroll-behavior: smooth;
+}
 }
 .feliz{
   width: 100%;
